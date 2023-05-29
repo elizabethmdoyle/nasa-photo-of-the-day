@@ -5,16 +5,17 @@ import axios from 'axios'
 
 function App() {
 
-const [nasaData, setNasaData] = useState(null);
+const [nasaData, setNasaData] = useState('');
 
 
 useEffect(() => {
-  axios.get('https://api.nasa.gov/#apod')
+   axios.get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`)
     .then(res => {
-      return console.log(res.data)
+       console.log(res.data)
+       setNasaData(res.data)
     })
     .catch(err => {
-      return console.log(Err)
+      return console.log(err)
     })
 
 }, [nasaData])
@@ -26,6 +27,8 @@ useEffect(() => {
         Read through the instructions in the README.md file to build your NASA
         app! Have fun <span role="img" aria-label='go!'>🚀</span>!
       </p>
+      <img src={nasaData}/>
+
     </div>
   );
 }
