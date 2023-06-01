@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Pics from '../Photos/Photos.css'
 const Photos = (props) => {
 
 
