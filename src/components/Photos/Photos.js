@@ -10,6 +10,7 @@ const Photos = (props) => {
             <p>{props.photo.date}</p>
             <p>{props.photo.explanation}</p>
             <p>{props.photo.copyright}</p>
+            <button>Photo Details</button>
         </div>
     )
 }

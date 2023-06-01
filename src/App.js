@@ -52,7 +52,7 @@ const [nasaData, setNasaData] = useState(dummyData);
 
   return (
     <div className="App" >
-     <Photos photo={nasaData} />   
+     { nasaData && <Photos photo={nasaData} />   }
     </div>
   );
 }
