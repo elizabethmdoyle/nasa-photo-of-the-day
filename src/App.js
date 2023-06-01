@@ -19,7 +19,7 @@ const dummyData = {
 
 
 
-function App(props) {
+function App() {
 
 const [nasaData, setNasaData] = useState(dummyData);
 // const [photoDetails, setPhotoDetails] = useState(null)
@@ -37,17 +37,16 @@ const [nasaData, setNasaData] = useState(dummyData);
 
 // // https://api.nasa.gov/planetary/apod?api_key=p7xfijrpRlqHjnqeyqkSalmjpKedDmfqziFIiKxK&date=2023-06-01
 
-// useEffect(() => {
-//    axios.get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`)
-//     .then(res => {
-//        console.log(res.data)
-//        setNasaData(res.data)
-//     })
-//     .catch(err => {
-//       return console.log(err)
-//     })
+useEffect(() => {
+   axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+    .then(res => {
+      setNasaData(res.data)
+    })
+    .catch(err => {
+      return console.log(err)
+    })
 
-// }, [])
+}, [])
 
 
   return (
