@@ -4,8 +4,16 @@ div {
     margin: 0 auto;
 
 }
+
+.nasa-photo-wrapper {
+    margin: 50px;
+    padding: 30px;
+    border: 2px solid black;
+
+}
 p {
     font-size: 2rem;
+    text-align: center;
 },
 
 h1 {
