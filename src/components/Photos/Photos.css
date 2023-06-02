@@ -1,13 +1,21 @@
 div {
     max-width: 90%;
     align-items: center;
+    margin: 0 auto;
+
 }
 p {
     font-size: 2rem;
 },
 
+h1 {
+    font-size: 6rem;
+    max-width: 80%;
+    align-items: center;
+}
+
 h3 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     max-width: 80%;
     align-items: center;
 }
